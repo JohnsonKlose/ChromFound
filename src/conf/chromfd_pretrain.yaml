@@ -1,0 +1,39 @@
+data_args:
+  chromosome_vocab_file_path: ./conf/chromosome_vocab.yaml
+  value_clip: -1
+  max_length: 440000
+  dna_embedding: false
+  sort_data: false
+  add_cls: false
+  cell_type_col: celltype
+  mask_ratio: 0.15
+  mask_chromosome: false
+  sort_chr: true
+train_args:
+  train_test_split: 0.9
+  batch_size: 128
+  lr: 1e-4
+  epoch: 5
+  loss_evaluate: 200
+  val_evaluate: 200
+  loss_lambda: 1
+  padding_value: -1
+model_args:
+  embedding_dim: 128
+  wpsa_heads: 8
+  wpsa_window_size: 256
+  shift_size: 128
+  value_size: 12
+  chromosome_size: 25
+  embedding_fusion_type: add
+  encoder_dim: 128
+  encoder_heads: 8
+  encoder_ff_dim: 128
+  encoder_layers: 4
+  embedding_dropout: 0.1
+  do_fft: false
+  linear_embedding: true
+  positional_embedding_type: dna_position
+  embedding_norm: false
+  positional_temp: 100000
+  chromatin_embedding: True

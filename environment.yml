@@ -1,0 +1,23 @@
+name: chromfound
+channels:
+  - defaults
+  - nvidia
+  - pytorch
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pip
+  - ipykernel
+  - jupyter
+  - conda-pack
+  - ipykernel
+  - cuda-toolkit=12.1
+  - pyyaml=6.0.2
+  - yaml=0.2.5
+  - pip:
+      - numpy==1.26.4
+      - scanpy==1.10.4
+      - episcanpy==0.3.1
+      - tqdm
+      - tensorboardx==2.6.2.2
