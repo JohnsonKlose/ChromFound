@@ -37,7 +37,7 @@ For platform-specific notes and troubleshooting when installing Mamba and FlashA
 
 
 ## Quick Start
-Note: The GitHub repo does NOT include large assets (`src/checkpoints/` and `sample_data/`). Download them from [Hugging Face](https://huggingface.co/YifengJiao/ChromFound) and place them locally as follows:
+Note: The GitHub repo does NOT include large assets (`src/checkpoints/` and `sample_data/`). Download them from [Hugging Face](https://huggingface.co/YifengJiao/ChromFound) or [Google Drive](https://drive.google.com/drive/folders/1wSq9gPwnUmSiw3obz1mjyX2ZiXS8sWbf?usp=sharing) and place them locally as follows:
 - Pretrained weights: download `model.pt`, `chromfd_pretrain.yaml`, `chromosome_vocab.yaml` into `src/checkpoints/`
 - Sample data: download `PBMC169K/*.h5ad` into `sample_data/PBMC169K/`
 
