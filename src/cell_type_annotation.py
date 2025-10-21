@@ -208,7 +208,7 @@ def cell_type_finetune(
                             finetune_args["log_path"], f"cell_type_label_pred.pkl"), "wb") as f:
                         pickle.dump((eval_cell_type_label_list, eval_cell_type_pred_list), f)
                     logger.info(
-                        f"[Evaluate] best validation f1_score: {best_f1_score:.4f} at epoch {eph} step {step}, "
+                        f"[Test] best validation f1_score: {best_f1_score:.4f} at epoch {eph} step {step}, "
                         f"test accuracy: {test_accuracy:.4f}, f1_score: {test_f1_score:.4f}"
                     )
                     torch.save(model.state_dict(), os.path.join(finetune_args["log_path"], "best_model.pt"))
